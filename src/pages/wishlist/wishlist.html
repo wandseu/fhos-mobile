@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Wishlist
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row (click)='viewDetails()'>
+    <ion-col width-33>
+      <img src = "assets/img/model_1.png" alt = "model_1">
+    </ion-col>
+    <ion-col width-67>
+      <p>H&M INSPIRED BOMBER JACKETS</p>
+        <strong>PHP 249.00</strong>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-50>
+    <ion-list>
+  <ion-item>
+          <ion-label>Size</ion-label>
+          <ion-select [(ngModel)]="size" checked = "true">
+            <ion-option value="freesize">Freesize</ion-option>
+            <ion-option value="small">Small</ion-option>
+            <ion-option value="medium">Medium</ion-option>
+            <ion-option value="large">Large</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+  </ion-col>
+    <ion-col width-50>
+      <button (click)='showCart()' ion-button icon-right color="dark" round block>
+      Add to Cart
+      <ion-icon name="cart"></ion-icon>
+    </button>
+    </ion-col>
+  </ion-row>
+  <hr>  
+</ion-content>

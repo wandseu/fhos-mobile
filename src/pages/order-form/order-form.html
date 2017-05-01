@@ -1,0 +1,103 @@
+<!--
+  Generated template for the OrderForm page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Order Form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div class="CustomerDetails">
+		<p>CUSTOMER DETAILS</p><hr>
+		<ion-list>
+
+		  <ion-item>
+		    <ion-label floating>First Name</ion-label>
+		    <ion-input type="text" [(ngModel)]="data"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>Middle Name</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>Last Name</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-list>
+			  <ion-item>
+			    <ion-label>Sex</ion-label>
+			    <ion-select [(ngModel)]="gaming" checked = "true">
+			      <ion-option value="male">Male</ion-option>
+			      <ion-option value="female">Female</ion-option>
+			    </ion-select>
+			  </ion-item>
+			</ion-list>
+
+		  <ion-item>
+		    <ion-label floating>Mobile No.</ion-label>
+		    <ion-input type="tel"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>Tel No.</ion-label>
+		    <ion-input type="tel"></ion-input>
+		  </ion-item>
+
+		</ion-list>
+	</div>
+
+	<div class="CustomerDetails">
+		<p>SHIPPING DETAILS</p><hr>
+		<ion-list>
+
+		  <ion-item>
+		    <ion-label floating>Street No.</ion-label>
+		    <ion-input type="No"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>Street</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>Barangay</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>City</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label floating>Region</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		</ion-list>
+	</div>
+
+	<button (click)='OrderSummary()' ion-button id="OrderSummary" color="dark" block round>Review Order Summary</button>
+
+</ion-content>
+
+<style type="text/css">
+p {
+	font-size: 16px;
+	font-weight: 900;
+}
+</style>

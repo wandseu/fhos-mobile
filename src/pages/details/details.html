@@ -1,0 +1,98 @@
+!--
+  Generated template for the Details page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Apparel Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div class="ApparelDetails">
+		<p>H&M INSPIRED BOMBER JACKETS</p><hr>
+		<!-- <p style="font-weight: 900;">PHP 249.00</p> -->
+		<strong>PHP 249.00</strong><br><br>
+
+		<!-- <ion-fab right bottom>
+		    <button ion-fab color="dark"><ion-icon name="heart"></ion-icon></button>
+		 </ion-fab> -->
+
+		<img src = "assets/img/model_1.png" alt = "model_1">
+		<ion-row>
+			<ion-col width-50>
+				<p style="font-weight: 800;">DESCRIPTION</p>
+			</ion-col>
+			<ion-col width-50>
+				<button (click)='addToWishlist()' ion-button icon-right color="dark" round block>
+				  Add to 
+				  <ion-icon name="heart"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+		<hr>
+		<p style="text-align: justify;">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p><hr>
+		<!-- <button (click)='showCheckboxColors()' ion-button id="Colors" color="light" round>Colors</button>
+		<button (click)='showCheckboxSizes()' ion-button id="Sizes" color="light" round>Sizes</button><hr> -->
+		<!-- <ion-list>
+		  <ion-item>
+		    <ion-label>Choose Color(s):</ion-label>
+		    <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Cancel" okText="Confirm">
+		      <ion-option value="Black" selected="true">Black</ion-option>
+		      <ion-option value="Army Green">Army Green</ion-option>
+		      <ion-option value="Baby Pink">Baby Pink</ion-option>
+		      <ion-option value="Brown">Brown</ion-option>
+		      <ion-option value="White">White</ion-option>
+		      <ion-option value="Maroon">Maroon</ion-option>
+		    </ion-select>
+		  </ion-item>
+		</ion-list> -->
+
+		<!-- <ion-list>
+		  <ion-item>
+		    <ion-label>Choose Size(s):</ion-label>
+		    <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Cancel" okText="Confirm">
+		      <ion-option value="Freesize" selected="true">Freesize</ion-option>
+		      <ion-option value="Small">Small</ion-option>
+		      <ion-option value="Medium">Medium</ion-option>
+		      <ion-option value="Large">Large</ion-option>
+		    </ion-select>
+		  </ion-item>
+		</ion-list> -->
+
+		<ion-list>
+			  <ion-item>
+			    <ion-label>Size</ion-label>
+			    <ion-select [(ngModel)]="size" checked = "true">
+			      <ion-option value="freesize">Freesize</ion-option>
+			      <ion-option value="small">Small</ion-option>
+			      <ion-option value="medium">Medium</ion-option>
+			      <ion-option value="large">Large</ion-option>
+			    </ion-select>
+			  </ion-item>
+			</ion-list>
+
+		<button (click)='showConfirmCart()' ion-button icon-right color="dark" round block>
+		  Add to Cart
+		  <ion-icon name="cart"></ion-icon>
+		</button>
+	</div>
+</ion-content>
+
+<style>
+.ApparelDetails
+{
+	text-align: center;
+}
+/*
+ion-fab
+{
+	margin-right: 20px;
+	margin-top: -50px;
+}*/
+</style>

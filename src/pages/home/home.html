@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+
+    <ion-buttons end>
+    	<button (click)='showSearch()' ion-button icon-right clear>
+		  <ion-icon name="search"></ion-icon>
+		</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+    <ion-slides pager>
+
+	  <ion-slide>
+	    <img src = "assets/img/slide_1.png" alt = "slide_1">
+	  </ion-slide>
+
+	  <ion-slide>
+	    <img src = "assets/img/slide_2.png" alt = "slide_2">
+	  </ion-slide>
+
+	  <ion-slide >
+	    <img src = "assets/img/slide_3.jpg" alt = "slide_3">
+	  </ion-slide>
+
+	</ion-slides>
+	<div class = "featured">
+		<p>Discover Now</p>
+		<!-- <hr>
+		<img src = "assets/img/model_1.png" alt = "model_1">
+		<ion-fab right bottom>
+		    <button ion-fab color="light"><ion-icon name="heart"></ion-icon></button>
+		 </ion-fab> -->
+		 <ion-card>
+
+			  <ion-card-content>
+			    <img (click)='viewDetails()' src = "assets/img/model_1.png" alt = "model_1">
+			  </ion-card-content>
+
+			  <ion-row>
+			    <ion-col>
+			      <button (click)="likePhoto()" ion-button icon-left clear small>
+			        <ion-icon name="thumbs-up"></ion-icon>
+			        <!-- <ion-badge item-right>{{ likes }}</ion-badge> -->
+			        <div>2.1k</div>
+			      </button>
+			    </ion-col>
+			    <ion-col>
+			      <button ion-button icon-left clear small>
+			        <ion-icon name="text"></ion-icon>
+			        <!-- <ion-badge item-right>123</ion-badge> -->
+			        <div>89</div>
+			      </button>
+			    </ion-col>
+			    <ion-col center text-center>
+			      <ion-note>
+			        11h ago
+			      </ion-note>
+			    </ion-col>
+			  </ion-row>
+
+			</ion-card>
+
+		<!-- <button [navPush]="detailsPage" ion-button id="ViewDetails" color="dark" block round>View Details</button> -->
+	</div>
+
+</ion-content>
+
+<style>
+ion-slides
+{
+	height: 200px;
+}
+
+.featured p
+{
+	font-weight: 800;
+	font-family: "Roboto";
+}
+</style>
