@@ -2,14 +2,22 @@
 * a mobile version ecommerce app template created using [Ionic 2](http://ionic.io/2)
 
 ## Home
-<div class = "col-md-12">
-  <div class = "col-md-6">
-    ![Home](screenshots/1.png)
-  </div>
-  <div class = "col-md-6">
-    ![Home](screenshots/2.png)
-  </div>
-</div>
+![Home](screenshots/home.png)
+
+## Apparel Details
+![Apparel Details](screenshots/apparel-details.png)
+
+## Cart & Wishlist
+![Cart & Wishlist](screenshots/cart-wishlist.png)
+
+## Notifications
+![Notifications](screenshots/notifications.png)
+
+## Order Form
+![Order Form](screenshots/order-form.png)
+
+## Side Menu & Search
+![Side Menu & Search](screenshots/sidemenu-search.png)
 
 ## Test it out locally
 - Clone this repo
